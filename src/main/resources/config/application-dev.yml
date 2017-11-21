@@ -26,9 +26,13 @@ spring:
         serialization.indent_output: true
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
-        url: jdbc:h2:mem:jhipstersampleapplication;DB_CLOSE_DELAY=-1
-        username: jhipsterSampleApplication
-        password:
+        url: jdbc:mysql://isg-linux.southeastasia.cloudapp.azure.com:3306/flyway_schema_dev?useUnicode=true&characterEncoding=utf8&useSSL=false
+        username: flyway_dev
+        password: flyway_dev
+        #type: com.zaxxer.hikari.HikariDataSource
+        #url: jdbc:h2:mem:jhipstersampleapplication;DB_CLOSE_DELAY=-1
+        #username: jhipsterSampleApplication
+        #password:
     h2:
         console:
             enabled: false
