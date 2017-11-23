@@ -45,11 +45,16 @@ spring:
             hibernate.generate_statistics: false
             hibernate.cache.region.factory_class: io.github.jhipster.config.jcache.NoDefaultJCacheRegionFactory
     mail:
-        host: localhost
-        port: 25
-        username:
-        password:
-    thymeleaf:
+        host: smtp.gmail.com
+        port: 587
+        username: cape.devteam@gmail.com
+        password: engineer@CAPE
+        protocol: smtp
+        tls: true
+        properties.mail.smtp:
+            auth: true
+            starttls.enable: true
+            ssl.trust: smtp.gmail.com    thymeleaf:
         cache: true
 
 liquibase:
